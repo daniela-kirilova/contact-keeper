@@ -7,7 +7,15 @@ const Navbar = ({ title, icon }) => {
  
   return (
     <div className='navbar bg-primary'>
-    
+    <i className={icon}/> {title}
+    <ul>
+      <li>
+        <Link to='/'>Home</Link>
+      </li>
+      <li>
+        <Link to='/about'>About</Link>
+      </li>
+    </ul>
     </div>
   );
 };
